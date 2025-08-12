@@ -5,12 +5,17 @@ chat = Tk()
 chat.geometry("400x300")
 chat.title("Chat with me")
 sent = Button(chat, text="Send", width=10, height=3) #to send text to bot
+save = Button(chat, text="Save", width=6)
+load = Button(chat, text="Load", width=6)
 chat_textbox = Text(chat, height=4, width=46)
 chat.iconphoto(False, tk.PhotoImage(file=r"C:\Users\ComServices\PycharmProjects\My computer\image file\testimage.png"))
 
 #set place for gui
 
 chat_textbox.place(x=0, y=245)
+
+load.place(x=50, y=0)
+save.place(x=0, y=0)
 sent.place(x=321, y=245)
 chat.resizable(False, False)
 chat.mainloop()
